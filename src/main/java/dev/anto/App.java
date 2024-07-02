@@ -1,17 +1,13 @@
 package dev.anto;
 
-/**
- * Hello world!
- */
-public final class App {
-    private App() {
-    }
+    public class App {
+        public static void main(String[] args) {
+          DiasDeLaSemana dias = new DiasDeLaSemana();
+      
+          for (String dia : dias.getDays()) {
+            System.out.println(dia);
+          }
+        }
+      }
+      
 
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
-}
